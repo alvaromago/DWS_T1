@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Formularios en PHP</title>
+	</head>
+	<body>
+		<h1>Formularios en PHP</h1>
+		<form action="formulario.php" method="post">
+			<label>Nombre:</label>
+			<input type="text" name="nombre" />
+			<input type="submit" value="Enviar" />
+		</form>
+		<hr />
+		<p>Suma</p>
+		<form action="formulario.php" method="get">
+			<label>Sumando 1:</label>
+			<input type="text" name="sumando1" />
+			<br />
+			<label>Sumando 2:</label>
+			<input type="text" name="sumando2" />
+			<br />
+			<input type="submit" value="Sumar" />
+		</form>
+	</body>
+</html>

@@ -9,6 +9,7 @@
 <body>
 	<h1>Ejemplo PHP</h1>
 	<p>Este es un ejemplo de página con código PHP.</p>
+
 	<?php
 	// Comentario de una línea
 	# También comentario de una línea
@@ -42,6 +43,20 @@
 	$datosPersonales['Nombre'] = "Alvaro";
 	$datosPersonales['Sexo'] = "Hombre";
 	$datosPersonales['Telefono'] = "635924643";
+
+	// Funciones
+	function sumar($param1, $param2)
+	{
+		$result = $param1 + $param2;
+		return $result;
+	}
+	echo "El resultado de la suma es: " . sumar(4, 5) . "<br><br>";
+
+	foreach ($_SERVER as $key => $valor) {
+		echo "SERVER[$key] = $valor<br>";
+	}
+
+
 	?>
 </body>
 
